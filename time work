@@ -1,0 +1,12 @@
+var startTime = new Date();
+
+// Ваш код или задачи здесь
+
+var endTime = new Date();
+var duration = endTime - startTime;
+
+var hours = Math.floor(duration / 3600000);
+var minutes = Math.floor((duration % 3600000) / 60000);
+var seconds = Math.floor((duration % 60000) / 1000);
+
+console.log("Время работы: " + hours + " ч " + minutes + " мин " + seconds + " сек");
